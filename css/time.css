@@ -56,7 +56,7 @@ span.timeback
 }
 
 .times1 {
-  background: #4e0000
+  background: #4eb84a
 }
 
 .timecolon0 {
@@ -68,7 +68,7 @@ span.timeback
 }
 
 .timeback {
-    background: rgba(0,0,0)
+    background: rgba(0,0,0,0)
 }
 
 .debug {
