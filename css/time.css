@@ -1,0 +1,77 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+#time {
+    width: 100%;
+    height: 105%;
+    position: absolute;
+    left: 0%;
+    top: -5%;
+    overflow: hidden
+}
+
+span.timeh1,
+span.timeh0,
+span.timem1,
+span.timem0,
+span.times1,
+span.times0,
+span.timecolon1,
+span.timecolon0,
+span.timeback
+{
+    position: absolute;
+    font-size: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.timeh0 {
+  background: #da4901
+}
+
+.timeh1 {
+  background: #da4901
+}
+
+.timem0{
+    background: #06c
+}
+
+.timem1{
+  background: #06c
+}
+
+.times0 {
+    background: #4eb84a
+}
+
+.times1 {
+  background: #4e0000
+}
+
+.timecolon0 {
+  background: #f3f3f3
+}
+
+.timecolon1 {
+  background: #f3f3f3
+}
+
+.timeback {
+    background: rgba(0,0,0)
+}
+
+.debug {
+  color: aliceblue;
+  margin: 5px;
+}

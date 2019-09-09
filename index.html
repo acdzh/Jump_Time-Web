@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+    <head>
+      <meta charset="utf-8">
+      <title>none title</title>
+    </head>
+    <body style="background-color: #002730">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/three.min.js"></script>   
+      <script type="text/javascript" src="js/canvas_lines.min.js"></script>
+      <script type="text/javascript" src="js/time.js"></script>
+      <script type="text/javascript" src="js/setUpColor.js"></script>
+      <script type="text/javascript" src="js/setUpListener.js"></script>
+      <link href="css/time.css" rel="stylesheet" type="text/css" />
+      <div id="debug0" class="debug">
+        <p id = "backgroundColor"></p>
+        <p id = "jumpTimes"></p>
+        <p id = "timeColorTable"></p>
+      </div>
+      <div id="time"></div>
+    </body>
+    <style id="style"></style>
+    <script>
+      var minJumpTimes = 0;
+      var maxJumpTimes = 2;
+      var isDebugMode = false;
+      var isHColorSame = true;
+      var isMColorSame = true;
+      var isSColorSame = true;
+      var isBackColorShow = false;
+      var colonColorMode = "2";
+      var isRandomColor = false;
+      var randomColorTime = 30000;
+      var randomColorInterval = null;
+      var temp = {
+        backgroundColorRGB: 'rgb(0, 39, 48)',
+        minJumpTimes: 0,
+        maxJumpTimes: 2,
+        timeColor: {
+          back: 'rgb(0,0,0)',
+          h: ['#da4901', '#da4901'],
+          m: ['#06c', '#06c'],
+          s: ['#4eb84a', '#4eb84a'],
+          colon: ['#f3f3f3', '#f3f3f3']
+        },
+        randomColor: {
+          back: 'rgb(0,0,0)',
+          h: ['#da4901', '#da4901'],
+          m: ['#06c', '#06c'],
+          s: ['#4eb84a', '#4eb84a'],
+          colon: ['#f3f3f3', '#f3f3f3']
+        },
+      }
+      $ = function (id) {
+        return typeof id === 'string' ? document.getElementById(id) : id;
+      }
+    </script>
+</html>
